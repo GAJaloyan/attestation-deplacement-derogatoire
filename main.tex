@@ -1,0 +1,116 @@
+\documentclass[a4paper,pagesize=pdftex,DIV=16]{scrartcl}
+\usepackage{indentfirst}
+
+\usepackage[width=21cm,
+height=29.7cm,
+top=2cm,
+inner=2cm,
+outer=2cm,
+margin=2cm]{geometry}
+\usepackage{xcolor}
+
+\usepackage[hidelinks]{hyperref}
+
+\newlength\TextFieldLength
+\newcommand\TextFieldFill[2][]{%
+	\setlength\TextFieldLength{\linewidth}%
+	\settowidth{\dimen0}{#2 }%
+	\addtolength\TextFieldLength{-\dimen0}%
+	\addtolength\TextFieldLength{-2.22221pt}%
+	\TextField[#1,width=\TextFieldLength]{\raisebox{2pt}{#2 }}%
+}
+\renewcommand*\footnoterule{}
+
+\begin{document}
+\begin{center}
+	\Large\textbf{ATTESTATION DE DÉPLACEMENT DÉROGATOIRE}
+\end{center}
+
+En application de l’article 3 du décret du 23 mars 2020 prescrivant les mesures générales nécessaires pour faire face à l’épidémie de Covid19 dans le cadre de l’état d’urgence sanitaire\\
+
+
+\setlength\parindent{0pt}
+Je soussigné(e),\\
+
+\begin{Form}
+    \TextFieldFill[backgroundcolor=gray!30,bordercolor=,height=1.4em]{Mme/M. : } \\[1.3ex]
+    \TextFieldFill[backgroundcolor=gray!30,bordercolor=,height=1.4em]{Né(e) le : } \\[1.3ex]
+    \TextFieldFill[backgroundcolor=gray!30,bordercolor=,height=1.4em]{\`A : } \\[1.3ex]
+    \TextFieldFill[backgroundcolor=gray!30,bordercolor=,height=1.4em]{Demeurant : } \\
+\end{Form}
+
+certifie que mon déplacement est lié au motif suivant (cocher la case) autorisé par l’article 3 du décret du 23 mars 2020 prescrivant les mesures générales nécessaires pour faire face à l’épidémie de Covid19 dans le cadre de l’état d’urgence sanitaire\footnotemark[1] :\\
+
+\footnotetext[1]{Les personnes souhaitant bénéficier de l'une de ces exceptions doivent se munir s’il y a lieu, lors de leurs déplacements hors de leur domicile, d'un document leur permettant de justifier que le déplacement considéré entre dans le champ de l'une de ces exceptions.}
+\def\LayoutCheckField#1#2{% label, field
+	#2 #1%
+}
+
+\begin{minipage}{0.05\textwidth}
+	\begin{Form}
+		\CheckBox[backgroundcolor=gray!30,width=1.5em,bordercolor=black,height=1.5em]{\ \unskip}\ 
+	\end{Form}
+\end{minipage}
+\begin{minipage}{0.94\textwidth} Déplacements entre le domicile et le lieu d’exercice de l’activité professionnelle, lorsqu’ils sont indispensables à l’exercice d’activités ne pouvant être organisées sous forme de télétravail ou déplacements professionnels ne pouvant être différés.\footnotemark[2]
+\end{minipage}
+\footnotetext[2]{\`A utiliser par les travailleurs non-salariés, lorsqu’ils ne peuvent disposer d’un justificatif de déplacement établi par leur employeur}
+\\[1.8ex]
+\begin{minipage}{0.05\textwidth}
+	\begin{Form}
+		\CheckBox[backgroundcolor=gray!30,width=1.5em,bordercolor=black,height=1.5em]{\ \unskip}\ 
+	\end{Form}
+\end{minipage}
+\begin{minipage}{0.94\textwidth} Déplacements pour effectuer des achats de fournitures nécessaires à l’activité professionnelle et des achats de première nécessité\footnotemark[3] dans des établissements dont les activités demeurent autorisées (liste sur gouvernement.fr).
+\end{minipage}
+\footnotetext[3]{Y compris les acquisitions à titre gratuit (distribution de denrées alimentaires\ldots) et les déplacements liés à la perception de prestations sociales et au retrait d’espèces.}
+\\[1.8ex]
+\begin{minipage}{0.05\textwidth}
+	\begin{Form}
+		\CheckBox[backgroundcolor=gray!30,width=1.5em,bordercolor=black,height=1.5em]{\ \unskip}\ 
+	\end{Form}
+\end{minipage}
+\begin{minipage}{0.94\textwidth} Consultations et soins ne pouvant être assurés à distance et ne pouvant être différés ; consultations et soins des patients atteints d'une affection de longue durée.
+\end{minipage}
+\\[1.8ex]
+\begin{minipage}{0.05\textwidth}
+	\begin{Form}
+		\CheckBox[backgroundcolor=gray!30,width=1.5em,bordercolor=black,height=1.5em]{\ \unskip}\ 
+	\end{Form}
+\end{minipage}
+\begin{minipage}{0.94\textwidth} Déplacements pour motif familial impérieux, pour l’assistance aux personnes vulnérables ou la garde d’enfants.
+\end{minipage}
+\\[1.8ex]
+\begin{minipage}{0.05\textwidth}
+	\begin{Form}
+		\CheckBox[backgroundcolor=gray!30,width=1.5em,bordercolor=black,height=1.5em]{\ \unskip}\ 
+	\end{Form}
+\end{minipage}
+\begin{minipage}{0.94\textwidth} Déplacements brefs, dans la limite d'une heure quotidienne et dans un rayon maximal d'un kilomètre autour du domicile, liés soit à l'activité physique individuelle des personnes, à l'exclusion de toute pratique sportive collective et de toute proximité avec d'autres personnes, soit à la promenade avec les seules personnes regroupées dans un même domicile, soit aux besoins des animaux de compagnie.
+\end{minipage}
+\\[1.8ex]
+\begin{minipage}{0.05\textwidth}
+	\begin{Form}
+		\CheckBox[backgroundcolor=gray!30,width=1.5em,bordercolor=black,height=1.5em]{\ \unskip}\ 
+	\end{Form}
+\end{minipage}
+\begin{minipage}{0.94\textwidth} Convocation judiciaire ou administrative. 
+\end{minipage}
+\\[2.1ex]
+\begin{minipage}{0.05\textwidth}
+	\begin{Form}
+		\CheckBox[backgroundcolor=gray!30,width=1.5em,bordercolor=black,height=1.5em]{\ \unskip}\ 
+	\end{Form}
+\end{minipage}
+\begin{minipage}{0.94\textwidth} Participation à des missions d’intérêt général sur demande de l’autorité administrative.
+\end{minipage}
+\\[2ex]
+
+\begin{Form}
+	\TextFieldFill[backgroundcolor=gray!30,bordercolor=,height=1.4em]{Fait à : } \\[1.3ex]
+	\TextField[backgroundcolor=gray!30,bordercolor=,width=3cm,height=1.4em]{Le : } \TextField[backgroundcolor=gray!30,bordercolor=,width=1cm,height=1.4em]{à}
+	\TextField[backgroundcolor=gray!30,bordercolor=,width=1cm,height=1.4em]{h}\\
+	(Date et heure de début de sortie à mentionner obligatoirement)
+	 \\[1.5ex]
+	\TextFieldFill[backgroundcolor=gray!30,bordercolor=,height=1.4em]{Signature : } \\
+\end{Form}
+\end{document}
